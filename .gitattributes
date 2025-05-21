@@ -2,3 +2,4 @@ fine_tuned_roberta_model/** filter=lfs diff=lfs merge=lfs -text
 Labelled[[:space:]]Yelp[[:space:]]Dataset.csv filter=lfs diff=lfs merge=lfs -text
 fine_tuned_roberta_model/variables/** filter=lfs diff=lfs merge=lfs -text
 Experiment/fine_tuned_roberta_model/** filter=lfs diff=lfs merge=lfs -text
+PreprocessedData/** filter=lfs diff=lfs merge=lfs -text
