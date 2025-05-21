@@ -1,0 +1,93 @@
+{
+    "name": "FakeReviewDetector",
+    "description": "Fake Review Detection on Amazon/Yelp",
+    "version": "1.0",
+    "manifest_version": 3,
+
+    "permissions": [
+        "storage",
+        "tabs",
+        "scripting"
+    ],
+
+    "host_permissions": [
+        "*://*.amazon.com/*",
+        "*://*.amazon.co.uk/*",
+        "*://*.amazon.de/*",
+        "*://*.amazon.ca/*",
+        "*://*.amazon.fr/*",
+        "*://*.amazon.it/*",
+        "*://*.amazon.es/*",
+        "*://*.amazon.jp/*",
+        "*://*.amazon.com.au/*",
+        "*://*.amazon.nl/*",
+        "*://*.amazon.se/*",
+        "*://*.amazon.pl/*",
+        "*://*.amazon.com.br/*",
+        "*://*.amazon.com.mx/*",
+        "*://*.amazon.ae/*",
+        "*://*.amazon.sg/*",
+        "*://*.amazon.in/*",
+        "*://*.yelp.com/*",
+        "*://*.yelp.co.uk/*",
+        "*://*.yelp.ca/*",
+        "*://*.yelp.ie/*",
+        "*://*.yelp.de/*",
+        "*://*.yelp.fr/*",
+        "*://*.yelp.es/*",
+        "*://*.yelp.it/*",
+        "*://*.yelp.com.au/*",
+        "*://*.yelp.ch/*",
+        "*://*.yelp.at/*",
+        "*://*.yelp.be/*",
+        "*://*.yelp.nl/*",
+        "*://*.yelp.se/*",
+        "*://*.yelp.pl/*"
+    ],
+
+    "action": {
+        "default_popup": "main.html",
+        "default_icon": "Logo.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.amazon.com/*",
+                "*://*.amazon.co.uk/*",
+                "*://*.amazon.de/*",
+                "*://*.amazon.ca/*",
+                "*://*.amazon.fr/*",
+                "*://*.amazon.it/*",
+                "*://*.amazon.es/*",
+                "*://*.amazon.jp/*",
+                "*://*.amazon.com.au/*",
+                "*://*.amazon.nl/*",
+                "*://*.amazon.se/*",
+                "*://*.amazon.pl/*",
+                "*://*.amazon.com.br/*",
+                "*://*.amazon.com.mx/*",
+                "*://*.amazon.ae/*",
+                "*://*.amazon.sg/*",
+                "*://*.amazon.in/*",
+                "*://*.yelp.com/*",
+                "*://*.yelp.co.uk/*",
+                "*://*.yelp.ca/*",
+                "*://*.yelp.ie/*",
+                "*://*.yelp.de/*",
+                "*://*.yelp.fr/*",
+                "*://*.yelp.es/*",
+                "*://*.yelp.it/*",
+                "*://*.yelp.com.au/*",
+                "*://*.yelp.ch/*",
+                "*://*.yelp.at/*",
+                "*://*.yelp.be/*",
+                "*://*.yelp.nl/*",
+                "*://*.yelp.se/*",
+                "*://*.yelp.pl/*"
+            ],
+            "js": [ "content.js" ],
+            "run_at": "document_idle"
+        }
+    ]
+}
