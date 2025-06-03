@@ -11,7 +11,7 @@
 ## Naudojimas 
 1. Sukurti virtualią python aplinką ir įrašyti prediction.py naudojamas bibliotekas.
 2. Paleisti prediction.py serverį su komanda python prediction.py.
-3. Atsidaryti Chrome naršyklę ir į paieškos juostą įrašyti chrome:\\extensions.
+3. Atsidaryti Chrome naršyklę ir į paieškos juostą įrašyti chrome://extensions.
 4. Įjungti Developer Mode rėžimą (Viršuje dešinėje)
 5. Spustėlti ant Load Unpacked
 6. Pasirinkti Extension folderį
